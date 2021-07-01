@@ -1,0 +1,220 @@
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body{
+    font-family: 'Jost', sans-serif;
+font-family: 'Kaushan Script', cursive;
+ }
+
+ 
+ .contenedor{
+   width: 90%;
+   max-width: 1100px;
+   overflow: hidden;
+   margin: 60px 0;
+ }
+
+ header{
+     height: 80vh;
+     background-image: linear-gradient(to top, rgba(41, 134, 170, 0.5)0%, hsla(261, 46%, 44%, 0.5) 100% ), url(soldadura.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed;
+     background-position: center;
+ }
+
+ .head{
+     text-align: center;
+     padding: 0;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     color: rgb(220, 233, 222);
+ }
+
+ .menu{
+     position: fixed;
+     top: 30px;
+     right: 30px;
+     background: #fff;
+     width: 40px;
+     height: 40px;
+     cursor: pointer;
+     border-radius: 10px;
+     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    }
+
+    .menu-navegation{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 15vw;
+        height: 100%;
+        background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        transition: transform .240s ease-in-out;
+        
+        box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    }
+
+    header:hover .menu-navegation{
+        transform: translate(100%);
+        color: #fff;
+        text-decoration: none;
+    }
+    .menu-navegation a{
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .titulo{
+        font-size: 60px;
+        margin-bottom: 15px;
+    }
+    .copy{
+        font-weight: 300;
+        font-size: 25px;
+    }
+
+    .subtitulo{
+        text-align: center;
+        font-weight: 300;
+        color: #9f8ad0;
+        margin-bottom: 40px;
+        font-size: 40px;
+    }
+
+    .parafo{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .gallery{
+     background: hsla(263, 35%, 50%, 0.336);
+    }
+
+    .contenedor-galeria{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .img-galeria{
+        object-fit: cover;
+        width: 30%;
+        display: block;
+        margin-bottom: 15px;
+        box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+        cursor: pointer;
+    }
+    
+.experts{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.count-expert{
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20%;
+}
+
+.count-expert img{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.n-expert{
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: 400;
+}
+
+footer{
+    background: #9f8ad0;
+    padding-bottom: 0.1px;
+}
+.contact-us{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: px;
+    padding-bottom: 40px;
+}
+.contact-us{
+    width: 40%;
+    color: rgba(236, 236, 236, 0.616);
+}
+
+.brand{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.brand+p{
+    font-weight: 500;
+}
+
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+@media screen and (max-width:800px){
+    .menu-navegation{
+        width: 50vw;
+    }
+    .titulo{
+        font-size: 40px;
+    }
+    .contenedor-galeria img{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    .img-galeria{
+        width: 45%;
+    }
+    .count-expert{
+        width: 80%;
+    }
+    .contact-us{
+        text-align: center;
+        width: 80%;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width:500px){
+.menu-navegation{
+    width: 65vw;
+}
+.menu{
+    top: 20px;
+    right: 95%;
+}
+ .titulo{
+    font-size: 30px;
+}
+.subtitulo{
+    font-size: 30px;
+}
+.img-galeria{
+    width: 95%;
+}
+}
